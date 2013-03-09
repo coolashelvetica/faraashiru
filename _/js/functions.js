@@ -7,7 +7,7 @@ $(document).ready(function (){
 
 	 $(".web").click(function()
    {
-   	$(".mobile-collection, .print.collection, .branding-collection, .interior-collection, #quoteContainer").fadeOut(100);
+   	$(".mobile-collection, .print.collection, .branding-collection, .interior-collection, #quoteContainer").hide();
    	$(".web-collection").fadeIn(300);
       $(".web").addClass("active");
       $(".mobile,.branding,.print,.interior").removeClass("active");
@@ -15,9 +15,37 @@ $(document).ready(function (){
 
    });
 
+    $(".rsvp").mouseover(function()
+   {
+      $(".more-rsvp").show();
+     
+
+   });
+    $(".rsvp").mouseout(function()
+   {
+      $(".more-rsvp").hide();
+     
+
+   });
+
+    $(".jiloak").mouseover(function()
+   {
+      $(".more-jiloak").show();
+     
+
+   });
+    $(".jiloak").mouseout(function()
+   {
+      $(".more-jiloak").hide();
+     
+
+   });
+
+
+
 	  $(".mobile").click(function()
    {
-   	$(".web-collection, .print.collection, .branding-collection, .interior-collection, #quoteContainer").fadeOut(100);
+   	$(".web-collection, .print.collection, .branding-collection, .interior-collection, #quoteContainer").hide();
    	$(".mobile-collection").fadeIn(300);
       $(".mobile").addClass("active");
        $(".web,.branding,.print,.interior").removeClass("active");
@@ -27,7 +55,7 @@ $(document).ready(function (){
 
 	  $(".print").click(function()
    {
-   	$(".web-collection, .mobile.collection, .branding-collection, .interior-collection, #quoteContainer").fadeOut(100);
+   	$(".web-collection, .mobile.collection, .branding-collection, .interior-collection, #quoteContainer").hide();
    	$(".print-collection").fadeIn(300);
       $(".print").addClass("active");
        $(".mobile,.branding,.web,.interior").removeClass("active");
@@ -37,7 +65,7 @@ $(document).ready(function (){
 
 	  $(".branding").click(function()
    {
-   	$(".web-collection, .print.collection, .mobile-collection, .interior-collection, #quoteContainer").fadeOut(200);
+   	$(".web-collection, .print.collection, .mobile-collection, .interior-collection, #quoteContainer").hide();
    	$(".branding-collection").fadeIn(300);
       $(".branding").addClass("active");
        $(".mobile,.web,.print,.interior").removeClass("active");
@@ -47,7 +75,7 @@ $(document).ready(function (){
 
 	  $(".interior").click(function()
    {
-   	$(".web-collection, .print.collection, .branding-collection, .mobile-collection").fadeOut(100);
+   	$(".web-collection, .print.collection, .branding-collection, .mobile-collection").hide();
    	$(".interior-collection").fadeIn(300);
       $(".interior").addClass("active");
        $(".mobile,.branding,.print,.web").removeClass("active");

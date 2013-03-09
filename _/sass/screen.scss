@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "compass/css3/opacity";
+@import "compass/css3";
 @import "mixins";
 
 
@@ -53,30 +53,43 @@ padding-top: 5px;
 		}
 	}
 }
-.web-collection, .mobile-collection, .print-collection, .branding-collecgtion, .interior-collection {
+.web-collection, .mobile-collection, .print-collection, .branding-collection, .interior-collection {
 margin-top: 120px;
 float: right;
 width: 80%;
 display:none;
 
-.work 
-{
+.work-home
+	{
+		display: inline-block;
 		li
-	{
-		display:inline-block;
-		margin-left: 25px;
-border: 8px solid black;
-height:200px;
-	}
-	
+		{
+			float: left;
 
-	img
-	{
-		width: 200px;
-		height:200px;
-
+			.more-rsvp 
+			{
+				
+				position: absolute;
+				display: none;
+		
+			}
+			.more-jiloak 
+			{
+				
+				position: absolute;
+				display: none;
+		
+			}
+			img
+			{
+				width: 310px;
+				height: 180px;
+				margin-right: 30px;
+			}
+		}
 	}
-}
+
+
 
 }
 #imageOverlay {
@@ -299,7 +312,10 @@ width: 500px;
 	top:350px;
 	background-color:white;
 	position: absolute;
-	padding-left:17%;
+	padding-left:5%;
+	padding-right:5%;
+
+	
 
 	h1
 	{
@@ -309,6 +325,7 @@ width: 500px;
 		border-bottom:1px solid black;
 		width:60%;
 		padding-bottom:5px;
+
 	}
 
 	.contactInfo {
@@ -468,6 +485,7 @@ form
 	   }
 	}
 }
+
 
 
 

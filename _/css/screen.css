@@ -148,26 +148,38 @@ body, html {
 }
 
 /* line 56, ../sass/screen.scss */
-.web-collection, .mobile-collection, .print-collection, .branding-collecgtion, .interior-collection {
+.web-collection, .mobile-collection, .print-collection, .branding-collection, .interior-collection {
   margin-top: 120px;
   float: right;
   width: 80%;
   display: none;
 }
-/* line 65, ../sass/screen.scss */
-.web-collection .work li, .mobile-collection .work li, .print-collection .work li, .branding-collecgtion .work li, .interior-collection .work li {
+/* line 63, ../sass/screen.scss */
+.web-collection .work-home, .mobile-collection .work-home, .print-collection .work-home, .branding-collection .work-home, .interior-collection .work-home {
   display: inline-block;
-  margin-left: 25px;
-  border: 8px solid black;
-  height: 200px;
 }
-/* line 74, ../sass/screen.scss */
-.web-collection .work img, .mobile-collection .work img, .print-collection .work img, .branding-collecgtion .work img, .interior-collection .work img {
-  width: 200px;
-  height: 200px;
+/* line 66, ../sass/screen.scss */
+.web-collection .work-home li, .mobile-collection .work-home li, .print-collection .work-home li, .branding-collection .work-home li, .interior-collection .work-home li {
+  float: left;
+}
+/* line 70, ../sass/screen.scss */
+.web-collection .work-home li .more-rsvp, .mobile-collection .work-home li .more-rsvp, .print-collection .work-home li .more-rsvp, .branding-collection .work-home li .more-rsvp, .interior-collection .work-home li .more-rsvp {
+  position: absolute;
+  display: none;
+}
+/* line 77, ../sass/screen.scss */
+.web-collection .work-home li .more-jiloak, .mobile-collection .work-home li .more-jiloak, .print-collection .work-home li .more-jiloak, .branding-collection .work-home li .more-jiloak, .interior-collection .work-home li .more-jiloak {
+  position: absolute;
+  display: none;
+}
+/* line 84, ../sass/screen.scss */
+.web-collection .work-home li img, .mobile-collection .work-home li img, .print-collection .work-home li img, .branding-collection .work-home li img, .interior-collection .work-home li img {
+  width: 310px;
+  height: 180px;
+  margin-right: 30px;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #imageOverlay {
   background: url("../img/imagePattern.png") repeat scroll left top transparent;
   width: 100%;
@@ -178,7 +190,7 @@ body, html {
   z-index: 10;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .error {
   width: 500px;
   height: 200px;
@@ -188,7 +200,7 @@ body, html {
   top: 42%;
   z-index: 13;
 }
-/* line 101, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .error img {
   width: 38px;
   float: right;
@@ -196,7 +208,7 @@ body, html {
   position: relative;
   right: 10px;
 }
-/* line 109, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .error p {
   text-align: center;
   font-size: 20px;
@@ -205,7 +217,7 @@ body, html {
   color: white;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .errorbg {
   background-color: white;
   width: 100%;
@@ -215,22 +227,22 @@ body, html {
   opacity: 0.9;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .cr {
   clear: right;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .cl {
   clear: left;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .cb {
   clear: both;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .blur-behind {
   height: 100%;
   width: 100%;
@@ -238,7 +250,7 @@ body, html {
   position: absolute;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .header {
   padding-top: 20px;
   position: fixed;
@@ -248,17 +260,17 @@ body, html {
   z-index: 13;
   border-bottom: 1px solid black;
 }
-/* line 165, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .header .logo {
   float: left;
   position: relative;
   left: 5%;
 }
-/* line 171, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .header .logo img {
   width: 230px;
 }
-/* line 177, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .header .navContainer {
   left: 47%;
   top: 45px;
@@ -266,22 +278,22 @@ body, html {
   position: absolute;
   width: 500px;
 }
-/* line 187, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .header .navContainer .nav li {
   display: inline-block;
   text-transform: uppercase;
   font-family: Helvetica, Arial, Sans-serif;
   font-size: 12px;
 }
-/* line 196, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .header .navContainer .nav li.active {
   background-color: black;
 }
-/* line 199, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .header .navContainer .nav li.active a {
   color: white;
 }
-/* line 204, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .header .navContainer .nav li a {
   text-decoration: none;
   color: black;
@@ -296,20 +308,20 @@ body, html {
   -o-transition: background-color 0.1s ease-in;
   transition: background-color 0.1s ease-in;
 }
-/* line 219, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .header .navContainer .nav li a:hover {
   color: white;
   background-color: black;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .banner {
   width: 100%;
   height: 240px;
   position: absolute;
   top: 80px;
 }
-/* line 242, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .banner #imageOverlay {
   background: url("../img/imagePattern.png") repeat scroll left top transparent;
   width: 100%;
@@ -319,7 +331,7 @@ body, html {
   top: 0;
   z-index: 10;
 }
-/* line 253, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .banner #quoteContainer {
   position: absolute;
   left: 25%;
@@ -331,14 +343,14 @@ body, html {
   -o-transition: width 0.5s ease-in;
   transition: width 0.5s ease-in;
 }
-/* line 266, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .banner #quoteContainer #quoteBG {
   position: absolute;
   width: 620px;
   background-color: black;
   display: block;
 }
-/* line 274, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .banner #quoteContainer #quoteBG #author p {
   color: #999999;
   float: right;
@@ -346,7 +358,7 @@ body, html {
   font-style: italic;
   font-size: 16px;
 }
-/* line 283, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .banner #quoteContainer #quoteBG #thequote h4 {
   color: #ffffff;
   padding: 50px 0;
@@ -355,16 +367,17 @@ body, html {
   font-size: 20px;
 }
 
-/* line 296, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .body {
   width: 85%;
   height: 1000px;
   top: 350px;
   background-color: white;
   position: absolute;
-  padding-left: 17%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-/* line 305, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .body h1 {
   font-size: 20px;
   font-family: Helvetica, Arial, Sans-serif;
@@ -373,7 +386,7 @@ body, html {
   width: 60%;
   padding-bottom: 5px;
 }
-/* line 314, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .body .contactInfo {
   width: 200px;
   float: right;
@@ -381,16 +394,16 @@ body, html {
   right: 150px;
   top: -30px;
 }
-/* line 322, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .body .contactInfo a {
   color: black;
   text-decoration: none;
 }
-/* line 327, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .body .contactInfo a:hover {
   color: purple;
 }
-/* line 333, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .body .contactInfo h2 {
   font-family: Helvetica, Arial, Sans-serif;
   font-size: 11px;
@@ -398,17 +411,17 @@ body, html {
   padding-top: 15px;
   text-transform: uppercase;
 }
-/* line 342, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .body .contactInfo p {
   font-size: 13px;
   padding-top: 10px;
 }
-/* line 350, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .body .contactForm {
   float: left;
   width: 83%;
 }
-/* line 355, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .body .success {
   width: 50%;
   display: block;
@@ -421,21 +434,21 @@ body, html {
   display: none;
   top: -40px;
 }
-/* line 368, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .body .success h1 {
   border-bottom: none;
 }
-/* line 372, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .body .success p {
   position: relative;
   left: -170px;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 form {
   margin-top: 15px;
 }
-/* line 384, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 form .gobutton {
   position: relative;
   float: right;
@@ -448,34 +461,34 @@ form .gobutton {
   top: 20px;
   right: 300px;
 }
-/* line 398, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 form span {
   font-size: 12px;
   font-family: Helvetica,Arial,Sans-serif;
   margin-bottom: 15px;
 }
-/* line 404, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 form span label {
   vertical-align: top;
 }
-/* line 409, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 form p {
   font-size: 12px;
   font-family: Helvetica,Arial,Sans-serif;
   margin-bottom: 15px;
 }
-/* line 416, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 form label {
   width: 80px;
   display: inline-block;
   padding-left: 45px;
   padding-right: 5px;
 }
-/* line 424, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 form label.first {
   padding-left: 0px;
 }
-/* line 429, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 form input[type="text"] {
   width: 229px;
   height: 30px;
@@ -484,7 +497,7 @@ form input[type="text"] {
   padding-left: 10px;
   font-size: 15px;
 }
-/* line 439, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 form textarea {
   background-color: #ddd;
   border: 1px solid #cccccc;
@@ -494,7 +507,7 @@ form textarea {
   padding-top: 10px;
   width: 223px;
 }
-/* line 450, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 form .styled-select {
   width: 240px;
   height: 34px;
@@ -503,7 +516,7 @@ form .styled-select {
   background: url("../img/down_arrow_select.jpg") no-repeat right #dddddd;
   border: 1px solid #cccccc;
 }
-/* line 458, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 form .styled-select select {
   background: transparent;
   width: 268px;
